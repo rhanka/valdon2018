@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Accélérer la valorisation des données</title>
+
+        <meta name="description" content="accélérer la valorisation des données au Ministère de l'Intérieur">
+        <meta name="author" content="Fabien ANTOINE">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section data-background="img/background-datalab.svg" data-markdown>
+                    <textarea data-template>
+                    ### Accélérer la valorisation des données
+                    <img width="180" style="background-color:white;border : 0;" data-src="img/datascience.png" alt="datascience">
+
+                    Fabien Antoine<br>
+                    Ministère de l'Intérieur
+                    </textarea>
+                </section>
+
+                <section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                        # Les données
+                      </textarea>
+                  </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                          <img width="800" src="img/patrimoine_donnees_mi_familles.png"><br/>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            ## variété
+
+                            - structurées et référencées (passages au frontières)
+                            - opendata (insee, IGN, météo, ...)
+                            - libellés libres (villes, véhicules, noms, sociétés)
+                            - géographiques (zones de compétences : sécurité intérieure, civile, communes, ...)
+                            - textes (procédures police)
+                            - images (radars, vidéosurveillance)
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            ## volumes
+                            - titres : > 100 millions
+                            - infractions : > 1 Mds
+                            - traffic: > 1000 Mds
+                          </textarea>
+                      </section>
+                      <section data-background="img/background-datalab.svg" data-markdown>
+                          <textarea data-template>
+                            ## velocité
+                            - temps statistiques : année / mois / semaine (observatoires sécurié intérieure, routière ...)
+                            - temps opérationnel :
+                                - jour / minute (supervision opérationnelle - sécurité civile, intérieure)
+                                - seconde (systèmes d'identification: contrôle frontière, ...)
+                        </textarea>
+                    </section>
+                </section>
+                <section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                        # la datascience
+                      </textarea>
+                  </section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                            #### "pyramide de Maslow" de la datascience
+                            <img width="600" src="img/pyramide_datascience.png"><br/>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                          #### bon à savoir
+
+                          - 60% du travail = préparation
+                          - 20% = algorithmie/statistiques simples
+                          - IA si cas mature ou ciblé
+                          - complexité &perp; bénéfice
+                            <br/><br/>
+
+                          #### itérer avec le métier pour évaluer la valeur
+
+                        </textarea>
+                    </section>
+                     <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            #### rôles et compétences variées
+
+                            - data architect : <small>architecture big data, sécurité, machine as a code</small>
+                            - data engineer : <small>transformation, automatisation, optimisation, qualité</small>
+                            - AMOA data: <small>modélisation et bénéfice métier, rapports visuels</small>
+                            - data scientist : <small>algorithmie générale: graphes, fuzzy, apprentissage simple ...</small>
+                            - data expert : <small>géographique, deep learning image ou texte</small>
+                            - développeur : <small>valorisations de données interactives</small>
+                        </textarea>
+                    </section>
+                  </section>
+                  <section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            # l'accompagnement
+                            #### de la mission de coordination et d'appui à la valorisation des données
+                          </textarea>
+                      </section>
+                      <section data-background="img/background-datalab.svg" data-markdown>
+                          <textarea data-template>
+                            - recensement des cas d'usage data : <small>méthode, capitalisation</small>
+                            - POC cas d'usage : <small>développements, challenges EIG, pré-production</small>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            #### recensement des cas d'usages
+                            #### éducation routière
+                            <img width="800" src="img/cadran_cas_usage_education_routiere.png"><br/>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            #### un recensement à généraliser
+                            - favoriser l'apport de la datascience au métier
+                            - analyser et suivre le bénéfice des actions data
+                            - prioriser
+                            - diffuser, communiquer
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            #### POCs cas d'usage
+                            - accompagner depuis l'idée initiale
+                            - montage projet <small>financement/spronsoring, FTAP, EIG, stages, interne ...</small>
+                            - maquetter/faire/encadrer <small> architectures, analyses, algorithmes, développements ...</small>
+                            - héberger / maintenir sur le datalab <small> jusqu'à industrialisation sur l'entrepôt </small>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            <img width="1000" src="img/POCs_MCAVD.png"><br/>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            #### mobilisation des compétences
+                            <img width="1000" src="img/POCs_competences.png"><br/>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            #### Facteurs de succès
+                            - sponsor direction et impliction du métier opértionnel
+                            - cadre de protection des données <small> mandats, engagements personnels, sécurité </small>
+                            - disponibilité des données <small> anticipation de 3 à 6 mois </small>
+                            - dispostif léger : <small> reporting minimal et documentation a posteriori </small>
+                            - savoir réviser / décomposer ses objectifs
+                            - anticiper la mise en production <small> capitalier sur l'entrepôt </small>
+                            - capitaliser y/c les échecs <small> code source, rapports, communication</small>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                          <small> Données et cas d'usage sur http://catalog.datalab.mi </small>
+                            <img width="1000" src="img/catalog.png"><br/>
+                        </textarea>
+                    </section>
+                </section>
+                <section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          # les outils
+                      </textarea>
+                  </section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          - Dataiku/DSS <small> collecter, mettre en forme, en qualité, alogrithmie, apprentissage simple et profond </small>
+                          - Tableau <small> rapports visuels, statistiques évoluées </small>
+                          - bases analytiques <small> vertica (aggrégation jusqu'à l'exabyte), elasticsearch (fuzzy), postgis (géographique)</small>
+                          - matériel (datalab: 400 vCpu, l'entrepôt: scalabilité du cloud MI)
+                      </textarea>
+                  </section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          #### Dataiku
+                          - pour: data architect, data engeneer, data scientist, data expert, développeur
+                          - collaboratif
+                          - technologies: SQL, python/scikit, R, scala, hadoop, tensorflow, ...
+                          - collecte des données jusqu'àu deep learning
+                          - API de scoring, web apps
+                      </textarea>
+                  </section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                        #### dataiku: l'orchestration des traitements
+                          <img width="800" src="img/interventions.png">
+                      </textarea>
+                  </section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                        #### dataiku : le laboratoire prédictif
+                          <img width="800" src="img/previsecours_ROC.png">
+                      </textarea>
+                  </section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          #### Tableau
+                          - pour: data scientist, statisticiens, contrôle de gestion
+                          - calculs dynamiques jusqu'au milli; ues jusrightu milliard d'enregistrements
+                          - visualisations avancée, jusqu'au géographique (simple)
+                      </textarea>
+                  </section>
+
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                    <textarea data-template>
+                      #### tableau : les tableaux de bord interactifs
+                      <img style="max-width: 130%; margin-left:-150px" src="img/tableau_resultats_ER.png">
+                    </textarea>
+                  </section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                    <textarea data-template>
+                      #### tableau : formules type excel sur du big data
+                      <img style="max-width: 130%; margin-left:-150px" src="img/tableau_resultats_ER_edit.png">
+                    </textarea>
+                  </section>
+                </section>
+                <section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          # Résultats
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          <img width="300" style="margin-top:-100px" src="img/matchID-logo.svg"><br/>
+                          <small>** rapprochements d'états civils jusqu'à 100 millions d'identités** <br/>
+                          - des millions de morts détectés dans les bases du ministère
+                          - premiers nettoyages engagés (SNPC)
+                          - accompagnement jusqu'à l'impact métier (e.g retraits de points post-décès)
+                          - une dizaine de cas traités (permis, immatriculations, armes, accidents, )
+                          - gros volumes, haute précision, API de scoring, doublons, graphes
+                          - score moyen de 95% (rappel=précision)
+                          - publication d'un logiciel libre avec jeu opendata
+                          - autres administration (Finances, TRACFIN, Travail)
+                        </textarea>
+                      </section>
+                      <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                          <small> https://matchid-project.github.io/ </small>
+                          <img style="max-width: 130%; margin-left:-150px" src="img/3matchid-frontend-validation.png">
+                        </textarea>
+                      </section>
+                      <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            <img width="200" style="margin-top:-100px" src="img/cartav.svg"><br/>
+                            <small>** géocodage et géodécisionnel avancé ** <br/>
+                            - croisement géographique accident et verbalisation
+                            - intégration de **15 sources** de données dont géographiques (IGN, opendata accidents)
+                            - 98,7% de couverture du géocodage (contre 55% pour le meilleur algorithme : addok/BAN d'étalab)
+                            - 90% de géocodage de qualité suffisante pour une exploitation en dataviz
+                            - 5 niveau géographiques interactifs filtrables (région/départements/circonscriptions/communes/routes/points)
+                            - utilisation expérimentée sur 100 circonscriptions de police
+                            - déploiement DGPN 2019
+                            - code opensource publié
+                          </textarea>
+                        </section>
+                        <section data-background="img/background-datalab.svg" data-markdown>
+                          <textarea data-template>
+                            <small> http://beta.datalab.mi/av </small>
+                            <img style="max-width: 130%; margin-left:-150px" src="img/cartav_toulouse.png">
+                          </textarea>
+                        </section>
+                        <section data-background="img/background-datalab.svg" data-markdown>
+                          <textarea data-template>
+                              <img width="200" style="margin-top:-100px" src="img/previsecours_logo.png"><br/>
+                              <small>** opendata et modélisation prédictive** <br/>
+                              - aider les **sapeurs-pompiers** à intervenir plus efficacement en anticipant leur volume d'interventions
+                              - intégration de **12 sources** de données opendata (méteo, pollen, épidémies, ...) et 2 métiers (ssmsi, sdis 91)
+                              - prévision semaines : score AUC 90% sur le secours à la personne, 78% incendies
+                              - expérimentation SDIS 91 en cours
+                              - hackathon en 2019 pour favoriser l'approfondissement et la généralisation
+                              - partenariat Nexis envisagé
+                            </textarea>
+                          </section>
+                          <section data-background="img/background-datalab.svg" data-markdown>
+                            <textarea data-template>
+                              <small> https://viz.previsecours.fr </small>
+                              <img style="max-width: 130%; margin-left:-150px" src="img/previsecours_viz.png">
+                            </textarea>
+                          </section>
+                          <section data-background="img/background-datalab.svg" data-markdown>
+                            <textarea data-template>
+                                <img width="150" style="padding-left: 100px;margin-top:-100px" src="img/polex.svg">
+                                <img width="100" style="padding-bottom: -100px;" src="img/lab.png"><br/>
+
+                                <small>** analyse d'anomalie statistiques ** <br/>
+                                - lutte contre la fraude aux examens du permis
+                                - 6 cas traités, un centre d'examen déjà fermé
+                                - incubateur LAB-mi et label start'up d'état
+                                - 1er déploiement octobre 2018
+                              </textarea>
+                          </section>
+
+                          <section data-background="img/background-datalab.svg" data-markdown>
+                            <textarea data-template>
+                                <img width="150" style="padding-left: 100px;margin-top:-100px" src="img/histovec_square.png">
+                                <img width="100" style="padding-bottom: -100px;" src="img/lab.png"><br/>
+
+                                <small>** publication de données personnelles sécurisées ** <br/>
+                                - permettre au vendeur de véhicule d'occasion de connaître l'historique de son véhicule et le communiquer à tout acheteur potentiel
+                                - pseudonymisation et hash salé
+                                - incubateur LAB-mi et label start'up d'état
+                                - réalisation/mise en production homologuée en 2,5 mois
+                                - évaluations avec Leboncoin, Armis auto
+                              </textarea>
+                          </section>
+                          <section data-background="img/background-datalab.svg" data-markdown>
+                            <textarea data-template>
+                              <small>rendez-vous sur https://histovec.interieur.gouv.fr</small><br/>
+                              <img style="max-width: 130%; margin-left:-150px" src="img/histovec_accueil.png">
+                            </textarea>
+                          </section>
+                          <section data-background="img/background-datalab.svg" data-markdown>
+                            <textarea data-template>
+                                #### contrôle frontières
+                                <small>** statistiques opérationnelles  ** <br/>
+                                - statistiques générales du passage aux frontières (150M enregistrements)
+                                - suivi opérationnel des déploiements (Parafe, Covadis)
+                                - statistiques des dysfonctionnement techniques (ouverture Sas, certificats ...)
+                                - réduction de la charge opérationnelle de suivi de l'équipe projet (~50k€/an)
+                                - calculs avancés sur données de détail (100M d'enregistrement)
+                                - opérationnel à la semaine voire / quart d'heure (Covadis/FPR2)
+                                - 20 tableaux de bords, 144 vues
+                              </textarea>
+                          </section>
+                          <section data-background="img/background-datalab.svg" data-markdown>
+                            <textarea data-template>
+                                <img src="img/tableau_CTF_batterie.png"><br/>
+                            </textarea>
+                          </section>
+                          <section data-background="img/background-datalab.svg" data-markdown>
+                            <textarea data-template>
+                                #### décisionnel éducation routière
+                                <small>** statistiques nationales et départementales ** <br/>
+                                - résultats des examens théorique et pratique du permis (20M d'enregistrements)
+                                - activité des inspecteurs
+                                - 30 tableaux de bords, 300 vues
+                                - organisation dévops du dataprep au dataviz
+                                - qualification en cours, production début 2019
+                                - suites: cas datascience (prévisions volumes d'examens, positionnement autoécoles)
+                              </textarea>
+                          </section>
+                          <section data-background="img/background-datalab.svg" data-markdown>
+                            <textarea data-template>
+                                <img  style="max-width: 130%; margin-left:-150px" src="img/tableau_ER_collaboratif.png"><br/>
+                            </textarea>
+                          </section>
+                </section>
+                <section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                          # Industrialisation
+                          #### du datalab à l'entrepôt
+                          <img width="400" src="img/lentrepot_outils.png"><br/>
+                        </textarea>
+                    </section>
+
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                            #### datalab
+                            - de l'avant-projet jusqu'à qualification
+                            - évolutions de l'architecture <small> gros volume, nouvelle technologie </small>
+                            <br/><br/>
+
+                            #### l'entrepôt
+                            production et évolutions itératives, sur le cloud MI
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                        <textarea data-template>
+                          #### déploiement & sécurité des données
+                          - un entrepôt statistique général
+                          <small> - par zone fonctionnelle ou direction métier (e.g 360 conducteur et véhicules)<br/> </small>
+                          <small> - données anonymes ou pseudonymisées, croisements statistiques autorisés </small>
+                          - un entrepôt par donnée protégée
+                          <small> - par zone fonctionnelle ou sous-direction : e.g. éducation routière (Polex) vs immatriculations (Selfim) <br/></small>
+                          <small> - finalités de **lutte contre la fraude**, qualité et **anonymisation** des données pour chaque quartier fonctionnel, un entrepôt (e.g éducation routière, permis, immatriculations) anonymisation </small>
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          <img  style="max-width: 100%; margin-left:-100px" src="img/deploiement_lentrepot.png"><br/>
+                      </textarea>
+                    </section>
+                </section>
+                <section>
+                  <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          # Perspectives
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          #### IA Flash
+                          <small>** deep learning images  ** <br/>
+                          - détecter automatiquement marque et modèle de véhicules sur les images radars
+                          - bloquer l'envoi de PV aux victimes de fausses doublettes
+                          - architecture deep learning (GPU/TPU ? cluster Tensorflow ?)
+                          - enjeux d'anonymisation (archivage, opendata/hackathons)
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          <img  style="max-width: 100%; margin-left:-100px" src="img/radar.png"><br/>
+                      </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          #### POC Vitesses
+                          <small>** 1000 milliards d'enregistrements  ** <br/>
+                          - définir les métriques pertinentes (dépassements de vitesse, ...)
+                          - évaluer l'impact des politiques de sécurité routière sur la pratique
+                          - enjeux d'architecture (vertica, Hadoop)
+                          - décisionnel géograhique gros volume (galligeo, custom, ... ?)
+                        </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          <img  style="max-width: 100%; margin-left:-100px" src="img/vitesses.png"><br/>
+                      </textarea>
+                    </section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          #### déploiement de l'entrepôt
+                          - finalisation : éducation routière, contrôle frontière
+                          - en cours: Actes, SID DGOM (+geo business)
+                          - opporunités:
+                            - sécurité routière :accidents / verbalisations / immatriculations / permis
+                            - sécurité civile : infosdis
+                        </textarea>
+                    </section>
+                  </section>
+                  <section>
+                    <section data-background="img/background-datalab.svg" data-markdown>
+                      <textarea data-template>
+                          # questions
+                      </textarea>
+                    </section>
+                  </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/search/search.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
